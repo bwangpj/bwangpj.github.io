@@ -1,82 +1,86 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Bryan Wang</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://latex.now.sh/style.css">
+
+  <link rel="stylesheet" href="style.css" />
+
 </head>
-<body>
+
+<body id="top">
+  <header>
+    <h1>Bryan Wang</h1>
+    <p class="author">
+      Bryan Wang <br />
+      Last updated May 2023
+    </p>
+  </header>
+
+  <div class="abstract">
+    <h2>Abstract</h2>
+    <p>
+      Abstract
+    </p>
+  </div>
+
+  <nav role="navigation" class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#getting-started">Getting Started</a></li>
+
+    </ol>
+  </nav>
+
+  <main>
+    <article>
+      <h2 id="getting-started">Getting Started</h2>
+      <ul>
+        <li>
+          Add
+          <code class="language-html">&lt;link rel="stylesheet"
+              href="https://latex.now.sh/style.css"&gt;</code>
+          to the <code class="language-html">&lt;head&gt;</code> of your website or install the
+          package using <code>npm install latex.css</code>.
+        </li>
+        <li>
+          (optional) Add any classes to elements described in the
+          <a href="#class-based-elements">next section</a>.
+        </li>
+        <li>
+          (optional) Add dark mode by adding the <code>latex-dark-auto</code> class to the <code
+            class="language-html">&lt;body&gt;</code>.
+          More infos <a href="#dark-mode">here</a>.
+        </li>
+        <li>
+          (optional) If you need support for
+          <span class="latex">L<span>a</span>T<span>e</span>X</span> math, add
+          the following script to include
+          <a href="https://www.mathjax.org/">MathJax</a>:
+          <pre><code class="language-html">&lt;script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"&gt;&lt;/script&gt;</code></pre>
+        </li>
+        <li>
+          (optional) If you need syntax highlighting, add
+          the following script to include
+          <a href="https://prismjs.com/">Prism</a> and the Prism LaTeX stylesheet (or use any other):
+          <pre><code class="language-html">&lt;link rel="stylesheet" href="https://latex.now.sh/prism/prism.css"&gt;
+
+&lt;script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"&gt;&lt;/script&gt;</code></pre>
+        </li>
+        <li>Done.</li>
+      </ul>
+
+      <h2 id="class-based-elements">Class-based Elements</h2>
+      <h3 id="author-abstract">Author and Abstract</h3>
+      <p>
+        Use the following code to add an author and abstract to your document.
+        It will look like <a href="#top">this</a>.
+      </p>
 
 
-<!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-	  <div class="container">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-		</div>
-
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav">
-				  <li><a href="index.html">Home</a></li>
-				  <li><a href="#talks">Talks and notes</a></li>
-				  <li><a href="#teaching">Teaching</a></li> 
-		  </ul>
-		</div>
-	  </div>
-	</nav>
-  
-  <!-- Page Content -->
-    <div class="container">
-
-        <div class="row">
-
-            <!-- Entries Column -->
-            <div class="col-md-8" style="height: 100vh;">
-                
-                <!-- Main Image -->
-                <img class="img-responsive" src="photo.gif" alt=""><br>
-                
-                <div style="margin-top:3%; text-align:justify;">                
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing <a href="#">elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					
-					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                </div>
-            </div> 
-
-            
-            
-            <!-- Publications -->
-            <div class="col-md-8" style="height: 100vh;">    
-                <h2 id="talks">Talks and notes</h2>
-                
-
-                <strong>Notes</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a>. Details </li>
-                </ul>
-            </div>
-
-            
-        </div>
-
-
-    </div>
-
-    
 </body>
 
 </html>
