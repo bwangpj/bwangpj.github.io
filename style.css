@@ -646,4 +646,7 @@ h5,
 h6 {
   margin-bottom: 0.8rem;
 }
-ul.talks li { margin: 1em; }
+ul.talks li { 
+  margin-top: 1em; 
+  margin-bottom: 1em; 
+}
